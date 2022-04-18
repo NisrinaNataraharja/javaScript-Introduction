@@ -15,11 +15,50 @@
 // const hasil = animal.push("Goat");
 // console.log(animal);
 
-//1.4 
+//1.4 indexOf() method yang me-return index pertama dari suatu value
+// me-return -1 jika value tidak ditemukan. Mulai dari kiri ke kanan
+// const animal = ["Cat", "Cow", "Bird"];
+// const index = animal.indexOf("Cow");
+// console.log(index);
 
+//1.5 filter() membuat array baru yang berisikan element yang sudah melewati eksekusi syarat dalam function
+// const ages = [10, 33, 16, 44];
+// const hasil = ages.filter(checkAdult);
+
+// function checkAdult(age) {
+//   return age > 13;
+// }
+// console.log(hasil);
+
+//1.6 toLowerCase() Mengubah string menjadi huruf kecil
+// let text = "Hello World!";
+// let hasil = text.toLowerCase();
+// console.log(hasil);
+
+//1.7 toUpperCase() Mengubah string menjadi huruf kapital
+// let text = "Hello World!";
+// let hasil = text.toUpperCase();
+// console.log(hasil);
+
+//1.8 replace() Mengganti suatu value dengan value lain
+//sensitive case pakai regex /i
+// let text = "Hello World!";
+// let newText = text.replace("World", "Pijar");
+// console.log(newText);
+
+//1.9 includes() Mengecek apakah suatu string memiliki suatu string yang dicari
+// let text = "Hello World!";
+// let newText = text.includes("World");
+// console.log(newText);
+
+//1.10 concat() menggabungkan dua atau lebih string
+// let text1 = "Hello";
+// let text2 = "World";
+// let text3 = text1.concat(" ", text2);
+// console.log(text3);
 
 //No 2
-// let name = [
+// const name = [
 //   "Abigail", "Alexandra", "Alison",
 //   "Amanda", "Angela", "Bella",
 //   "Carol", "Caroline", "Carolyn",
@@ -41,7 +80,7 @@
 //   console.log(param);
 // }
 
-// searchName("an", 2, printSearch)
+// searchName("An", 5, printSearch)
 
 
 //No 3 
@@ -68,6 +107,6 @@
 
 // }
 
-// seleksiNilai(1, 2 , [2, 25, 4, 14, 1]);
+// seleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8]);
 
 
