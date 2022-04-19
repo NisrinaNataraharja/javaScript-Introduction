@@ -15,17 +15,17 @@
 // const hasil = animal.push("Goat");
 // console.log(animal);
 
-//1.4 indexOf() method yang me-return index pertama dari suatu value
+//1.4 indexOf() method yang me-return index dari suatu value
 // me-return -1 jika value tidak ditemukan. Mulai dari kiri ke kanan
 // const animal = ["Cat", "Cow", "Bird"];
-// const index = animal.indexOf("Cow");
+// const index = animal.indexOf("Bird");
 // console.log(index);
 
 //1.5 filter() membuat array baru yang berisikan element yang sudah melewati eksekusi syarat dalam function
 // const ages = [10, 33, 16, 44];
-// const hasil = ages.filter(checkAdult);
+// const hasil = ages.filter(checkAge);
 
-// function checkAdult(age) {
+// function checkAge(age) {
 //   return age > 13;
 // }
 // console.log(hasil);
@@ -43,7 +43,7 @@
 //1.8 replace() Mengganti suatu value dengan value lain
 //sensitive case pakai regex /i
 // let text = "Hello World!";
-// let newText = text.replace("World", "Pijar");
+// let newText = text.replace(/WORLD/i, "Pijar");
 // console.log(newText);
 
 //1.9 includes() Mengecek apakah suatu string memiliki suatu string yang dicari
@@ -80,33 +80,36 @@
 //   console.log(param);
 // }
 
-// searchName("An", 5, printSearch)
+// searchName("An", 4, printSearch)
 
 
 //No 3 
 // const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
 
-//   if (typeof(nilaiAwal)==="number" && typeof(nilaiAkhir)==="number" && typeof(dataArray)==="object") {
-//     const cariData = dataArray.filter((data) => {
-//       dataArray.sort((a, b) => a - b);
-//       return data > nilaiAwal && data < nilaiAkhir;
-//     }) 
-//     if (nilaiAwal > nilaiAkhir) {
-//       console.log("Nilai akhir harus lebih besar dari nilai awal");
-//     }else if(dataArray.length < 5){
-//       console.log("Jumlah angka dalam dataArray harus lebih dari 5");
-//     }else if(cariData.length === 0){
-//       console.log("Nilai tidak ditemukan");
-//     }else{
-//       console.log(cariData);
+//     if (typeof (nilaiAwal) === "number" && typeof (nilaiAkhir) === "number" && typeof (dataArray) === "object") {
+//         const cariData = dataArray.sort((a, b) => a - b).filter((data) => {
+        
+//             return data > nilaiAwal && data < nilaiAkhir;
+//         })
+//         if (nilaiAwal > nilaiAkhir) {
+//             console.log("Nilai akhir harus lebih besar dari nilai awal");
+//         } else if (dataArray.length < 5) {
+//             console.log("Jumlah angka dalam dataArray harus lebih dari 5");
+//         } else if (cariData.length === 0) {
+//             console.log("Nilai tidak ditemukan");
+//         } else {
+//             console.log(cariData);
+//         }
+//     } else {
+//         console.log("Masukkan data yang benar");
 //     }
-//     //console.log(cariData);
-//   } else {
-//     console.log("masukkan data yang benar");
-//   }
 
 // }
 
-// seleksiNilai(5, 20 , [2, 25, 4, 14, 17, 30, 8]);
+// seleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
+// seleksiNilai(15, 3, [2, 25, 4, 14, 17, 30, 8]);
+// seleksiNilai(5, 17, [2, 25, 4]);
+// seleksiNilai(5, 17, [2, 25, 4, 1, 30, 18]);
+// seleksiNilai(5, "20", [2, 25, 4, 14, 17, 30, 8]);
 
 
